@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Dancing Script', cursive;
+}
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family:  'Dancing Script', cursive; 
+}
+h2{
+    margin-top: 7%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family:  'Dancing Script', cursive;  
+    font-size: 120%;
+}
+

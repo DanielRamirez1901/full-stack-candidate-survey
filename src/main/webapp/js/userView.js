@@ -5,7 +5,7 @@ class UserView{
     }
 
     addVote = ()=>{
-        alert('Este usuario voto por' +this.user.id);
+        window.alert('Voto registrado exitosamente');
         let xhr = new XMLHttpRequest();
         xhr.addEventListener('readystatechange',()=>{
             if(xhr.readyState===4){

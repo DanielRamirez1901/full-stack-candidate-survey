@@ -5,28 +5,6 @@ const regBtn = document.getElementById('regBtn');
 const usersContainer = document.getElementById('usersContainer');
 const resBtn = document.getElementById('resBtn');
 
-const registrar = () =>{
-    let usuarioObj = {
-        id : 0,
-        nombre: nombre.value,
-        totalVotos: totalVotos.value
-    };
-    console.log(JSON.stringify(usuarioObj));
-
-    //POST
-    let xhr = new XMLHttpRequest();
-    //Response
-    xhr.addEventListener('readystatechange', ()=>{
-        if(xhr.readyState === 4){
-            console.log(xhr.responseText);
-        }
-    });
-    xhr.open('POST', 'http://localhost:8080/elecciones_candidatos/api/candidatos/create');
-    xhr.setRequestHeader('Content-Type','application/json');
-    xhr.send( JSON.stringify(usuarioObj) );//toJson
-
-};
-//regBtn.addEventListener('click', registrar);
 
 const goToResumen = ()=>{
     /*
